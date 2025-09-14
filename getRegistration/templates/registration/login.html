@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
 <form>
 
 </form><form method="POST">
@@ -5,4 +8,8 @@
     {{ form }}
     <button type=submit>Submit</button>
 
+    <p>You don't have any account? <a href="{% url "signup" %}"> Click here to Register!</a></p>
+
 </form>
+
+{% endblock content %}
